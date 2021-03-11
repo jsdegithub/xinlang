@@ -1,0 +1,157 @@
+.hd {
+    background: url(./img/header_bg.png) no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.24rem 0 0.08rem;
+}
+.hd_cut {
+    position: relative;
+    width: 1.98rem;
+    height: 0.44rem;
+    line-height: 0.44rem;
+    display: flex;
+    font-size: 0.24rem;
+    border-radius: 0.3rem;
+    background: rgba(0, 0, 0, 0.1);
+    margin-top: 0.12rem;
+}
+.hd_cut a {
+    width: 50%;
+    height: 0.44rem;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.4);
+}
+.hd_cut a:first-child::after {
+    position: absolute;
+    left: 50%;
+    top: 0.13rem;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 0.18rem;
+    background: #6bb0e7;
+    background: hsla(0, 0%, 100%, 0.3);
+}
+.hd_cut .active {
+    color: #ffffff;
+}
+.hd_logo {
+    width: 2.04rem;
+    height: 0.56rem;
+    margin: 0.04rem 0.11rem 0.32rem 0.2rem;
+}
+.hd_logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hd_set a {
+    color: #ffffff;
+    margin-left: 0.33rem;
+}
+.hd_set {
+    font-size: 0.36rem;
+    margin: 0.08rem 0.2rem 0 0;
+}
+
+.hd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hd_nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.hd_nav ul li {
+    width: 14.285%;
+    font-size: 0.32rem;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 0.24rem;
+}
+.hd_nav ul li a {
+    color: #ffffff;
+}
+
+.item {
+    padding: 0.22rem 0;
+    margin: 0 0.2rem;
+    border-bottom: 1px solid #e4e4e4;
+}
+.item a {
+    display: flex;
+}
+.item a .txt {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 0.1rem;
+}
+.item a .txt .sec_tit {
+    font-size: 0.34rem;
+    line-height: 0.48rem;
+    font-weight: normal;
+    color: #1a1a1a;
+    
+    /* 文字溢出用省略号代替的四行代码 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+
+    margin-bottom: 0.2rem;
+}
+.item a .pic {
+    width: 2rem;
+    height: 1.34rem;
+}
+.three_pic a .pic-wrap {
+    width: 100%;
+    overflow: hidden;
+}
+.tree_pic a .txt .pic {
+    display: flex;
+    /* width: 100%; */
+    /* 使用width:auto;可以解决向左平移后右边宽度缺少的问题 */
+    width: auto;
+    margin-left: -0.1rem;
+}
+.big_pic a .txt .pic {
+    width: 100%;
+    height: auto;
+}
+.big_pic a .txt .pic img {
+    width: 100%;
+    margin-bottom: 0.2rem;
+}
+.tree_pic a .txt .pic img {
+    width: 33.33%;
+    border-left: 0.1rem solid #ffffff;
+    box-sizing: border-box;
+    margin-bottom: 0.2rem;
+}
+.item a .pic img {
+    display: block;
+    width: 100%;
+    height: 100;
+}
+.item a .txt .sec_com {
+    display: flex;
+    color: #888;
+    font-size: 0.22rem;
+    line-height: 1.3;
+}
+.sec_com .icon_com {
+    margin-right: 0.1rem;
+    display: inline-block;
+    font-size: 0.26rem;
+    vertical-align: middle;
+    padding: 0 0 0 0.01rem;
+}
+.sec_com .sec_num {
+    vertical-align: middle;
+}
